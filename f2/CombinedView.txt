@@ -1,0 +1,108 @@
+
+
+
+
+CREATE TABLE Student (
+    StudentID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Age INT,
+    Gender VARCHAR(10),
+    Major VARCHAR(50),
+    Year INT,
+    GPA DECIMAL(3, 2),
+    Email VARCHAR(100),
+    PhoneNumber VARCHAR(15)
+);
+INSERT INTO Student (StudentID, FirstName, LastName, Age, Gender, Major, Year, GPA, Email, PhoneNumber)
+VALUES
+(1, 'John', 'Doe', 20, 'Male', 'Computer Science', 2, 3.5, 'john.doe@example.com', '123-456-7890'),
+(2, 'Jane', 'Smith', 21, 'Female', 'Mathematics', 3, 3.8, 'jane.smith@example.com', '234-567-8901'),
+(3, 'Michael', 'Brown', 22, 'Male', 'Physics', 4, 3.2, 'michael.brown@example.com', '345-678-9012'),
+(4, 'Emily', 'Davis', 19, 'Female', 'Chemistry', 1, 3.7, 'emily.davis@example.com', '456-789-0123'),
+(5, 'Chris', 'Wilson', 23, 'Male', 'Biology', 4, 3.3, 'chris.wilson@example.com', '567-890-1234'),
+(6, 'Sophia', 'Taylor', 20, 'Female', 'Economics', 2, 3.6, 'sophia.taylor@example.com', '678-901-2345'),
+(7, 'Daniel', 'Miller', 21, 'Male', 'Engineering', 3, 3.4, 'daniel.miller@example.com', '789-012-3456'),
+(8, 'Olivia', 'Anderson', 19, 'Female', 'Art', 1, 3.9, 'olivia.anderson@example.com', '890-123-4567'),
+(9, 'James', 'Thomas', 22, 'Male', 'History', 4, 3.1, 'james.thomas@example.com', '901-234-5678'),
+(10, 'Isabella', 'Jackson', 20, 'Female', 'Literature', 2, 3.5, 'isabella.jackson@example.com', '012-345-6789'),
+(11, 'Matthew', 'White', 21, 'Male', 'Philosophy', 3, 3.0, 'matthew.white@example.com', '123-567-8901'),
+(12, 'Mia', 'Harris', 19, 'Female', 'Political Science', 1, 3.8, 'mia.harris@example.com', '234-678-9012'),
+(13, 'Andrew', 'Martin', 22, 'Male', 'Sociology', 4, 2.9, 'andrew.martin@example.com', '345-789-0123'),
+(14, 'Ava', 'Garcia', 20, 'Female', 'Psychology', 2, 3.7, 'ava.garcia@example.com', '456-890-1234'),
+(15, 'Joshua', 'Martinez', 21, 'Male', 'Business', 3, 3.4, 'joshua.martinez@example.com', '567-901-2345'),
+(16, 'Chloe', 'Robinson', 19, 'Female', 'Law', 1, 3.9, 'chloe.robinson@example.com', '678-012-3456'),
+(17, 'Ethan', 'Clark', 22, 'Male', 'Engineering', 4, 3.2, 'ethan.clark@example.com', '789-123-4567'),
+(18, 'Grace', 'Rodriguez', 20, 'Female', 'Nursing', 2, 3.6, 'grace.rodriguez@example.com', '890-234-5678'),
+(19, 'David', 'Lewis', 21, 'Male', 'Education', 3, 3.1, 'david.lewis@example.com', '901-345-6789'),
+(20, 'Amelia', 'Walker', 19, 'Female', 'Music', 1, 3.8, 'amelia.walker@example.com', '012-456-7890');
+
+
+
+
+
+CREATE TABLE Hosteller (
+    HostellerID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Age INT,
+    Gender VARCHAR(10),
+    PhoneNumber VARCHAR(15),
+    RoomNumber INT,
+    HostelName VARCHAR(50),
+    CheckInDate DATE,
+    CheckOutDate DATE
+);
+
+
+INSERT INTO Hosteller (HostellerID, FirstName, LastName, Age, Gender, PhoneNumber, RoomNumber, HostelName, CheckInDate, CheckOutDate)
+VALUES
+(1, 'John', 'Doe', 20, 'Male', '123-456-7890', 101, 'Hostel A', '2024-08-01', '2024-12-15'),
+(2, 'Jane', 'Smith', 21, 'Female', '234-567-8901', 102, 'Hostel B', '2024-08-01', '2024-12-15'),
+(3, 'Michael', 'Brown', 22, 'Male', '345-678-9012', 103, 'Hostel A', '2024-08-01', '2024-12-15'),
+(4, 'Emily', 'Davis', 19, 'Female', '456-789-0123', 104, 'Hostel C', '2024-08-01', '2024-12-15'),
+(5, 'Chris', 'Wilson', 23, 'Male', '567-890-1234', 105, 'Hostel B', '2024-08-01', '2024-12-15'),
+(6, 'Sophia', 'Taylor', 20, 'Female', '678-901-2345', 106, 'Hostel A', '2024-08-01', '2024-12-15'),
+(7, 'Daniel', 'Miller', 21, 'Male', '789-012-3456', 107, 'Hostel C', '2024-08-01', '2024-12-15'),
+(8, 'Olivia', 'Anderson', 19, 'Female', '890-123-4567', 108, 'Hostel B', '2024-08-01', '2024-12-15'),
+(9, 'James', 'Thomas', 22, 'Male', '901-234-5678', 109, 'Hostel A', '2024-08-01', '2024-12-15'),
+(10, 'Isabella', 'Jackson', 20, 'Female', '012-345-6789', 110, 'Hostel C', '2024-08-01', '2024-12-15'),
+(11, 'Matthew', 'White', 21, 'Male', '123-567-8901', 111, 'Hostel B', '2024-08-01', '2024-12-15'),
+(12, 'Mia', 'Harris', 19, 'Female', '234-678-9012', 112, 'Hostel A', '2024-08-01', '2024-12-15'),
+(13, 'Andrew', 'Martin', 22, 'Male', '345-789-0123', 113, 'Hostel C', '2024-08-01', '2024-12-15'),
+(14, 'Ava', 'Garcia', 20, 'Female', '456-890-1234', 114, 'Hostel B', '2024-08-01', '2024-12-15'),
+(15, 'Joshua', 'Martinez', 21, 'Male', '567-901-2345', 115, 'Hostel A', '2024-08-01', '2024-12-15'),
+(16, 'Chloe', 'Robinson', 19, 'Female', '678-012-3456', 116, 'Hostel C', '2024-08-01', '2024-12-15'),
+(17, 'Ethan', 'Clark', 22, 'Male', '789-123-4567', 117, 'Hostel B', '2024-08-01', '2024-12-15'),
+(18, 'Grace', 'Rodriguez', 20, 'Female', '890-234-5678', 118, 'Hostel A', '2024-08-01', '2024-12-15'),
+(19, 'David', 'Lewis', 21, 'Male', '901-345-6789', 119, 'Hostel C', '2024-08-01', '2024-12-15'),
+(20, 'Amelia', 'Walker', 19, 'Female', '012-456-7890', 120, 'Hostel B', '2024-08-01', '2024-12-15');
+
+
+CREATE VIEW CombinedView AS
+SELECT 
+    s.FirstName AS FirstName_Student,
+    s.LastName AS LastName_Student,
+    s.Age AS Age_Student,
+    s.Gender AS Gender_Student,
+    s.PhoneNumber AS PhoneNumber_Student,
+    s.Major AS Major_Student,
+    s.Year AS Year_Student,
+    s.GPA AS GPA_Student,
+    s.Email AS Email_Student,
+    h.RoomNumber AS RoomNumber_Hosteller,
+    h.HostelName AS HostelName_Hosteller,
+    h.CheckInDate AS CheckInDate_Hosteller,
+    h.CheckOutDate AS CheckOutDate_Hosteller
+FROM 
+    Student s
+JOIN 
+    Hosteller h ON s.FirstName = h.FirstName 
+                 AND s.LastName = h.LastName 
+                 AND s.Age = h.Age
+                 AND s.Gender = h.Gender
+                 AND s.PhoneNumber = h.PhoneNumber;
+
+SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'CombinedView';

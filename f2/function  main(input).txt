@@ -1,0 +1,16 @@
+function  main(input)
+{
+let count=0;
+for(let c of input)
+{
+if((c>='a' && c<='z') || (c>='A' &&  c<='Z) || (c>='0' && c<='9') || (c==' '))
+{
+continue;
+}
+else
+{
+count++;
+}
+}
+console.log(count)
+}c
